@@ -205,7 +205,9 @@ And here's the shortcode:
 
 Here's the result:
 
-{{site.data.alerts.callout_info}}This is a special callout information message.
+{{site.data.alerts.callout_info}}
+
+This is a special callout information message.
 
 You can use any of the following:
 {% raw %}
