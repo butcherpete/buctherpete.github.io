@@ -1,15 +1,16 @@
 ---
-title: Labels
-tags: [formatting]
+title: Film Italiani 
+tags: [film]
 keywords: film, italiano
 last_updated: January 28, 2017
-summary: "Ecco i cento film italiani da salvare.Le pellicole che hanno cambiato la memoria collettiva del Paese tra il 1942 e il 1978."
+summary: "A catalog of Italian films I have seen or want to see."
 sidebar: mydoc_sidebar
 permalink: mydoc_film_italiani.html
 folder: mydoc
 ---
 
 ## 100 film italiani da salvare
+Ecco i cento film italiani da salvare. Le pellicole che hanno cambiato la memoria collettiva del Paese tra il 1942 e il 1978.
 
 * _Quattro passi fra le nuvole_, regia di Alessandro Blasetti (1942) YouTube
 * _Ossessione_, regia di Luchino Visconti (1943) &#9733;&#9733;&#9733;&#9733;&#9733;

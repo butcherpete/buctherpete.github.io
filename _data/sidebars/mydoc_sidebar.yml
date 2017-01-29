@@ -294,6 +294,14 @@ entries:
           url: /tag_troubleshooting.html
           output: web
 
+  - title: Vim Notes
+    output: web, pdf
+
+    folderitems:
+    - title: Vim Notes Omnibus 
+      url: /mydoc_vim_notes.html
+      output: web, pdf
+
   - title: Film 
     output: web, pdf
 
@@ -302,6 +310,6 @@ entries:
       url: /mydoc_film_italiani.html
       output: web, pdf
 
-    - title: Samurai Films 
-      url: /mydoc_samurai_films.html
+    - title: Jidaigeki Films 
+      url: /mydoc_jidaigeki.html
       output: web, pdf
