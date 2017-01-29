@@ -19,12 +19,14 @@ $ grip filename.md
 ```
 
 ## URLs
+
 Command | Action
 ---     | ------
 `gx` |  Opens URL under cursor.
 
  
 ## <a id="emojis">Emojis</a>
-http://www.webpagefx.com/tools/emoji-cheat-sheet/
+
+<http://www.webpagefx.com/tools/emoji-cheat-sheet/>
 
 

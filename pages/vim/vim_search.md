@@ -11,11 +11,12 @@ folder: vim
 
 ## Ack
 
-http://beyondgrep.com/documentation/
+<http://beyondgrep.com/documentation/>
 
 ```
 :Ack [options] {pattern} [{directories}]
 ```
+
 Search recursively in `{directories}`, which defaults to the current directory for the `{pattern}`.
 
 Files containing the search term will be listed in the quickfix window, along with the line number of the occurrence, once for each occurrence. `<Enter>` on a line in this window will open the file, and place the cursor on the matching line.
@@ -57,7 +58,7 @@ Most of the `:[L]Ack*` commands support this. Note that this behavior follows th
 
 ## Vimgrep
 
-http://vimcasts.org/episodes/search-multiple-files-with-vimgrep/
+<http://vimcasts.org/episodes/search-multiple-files-with-vimgrep/>
 
 We can use the `:vimgrep` command to populate the quickfix list with search results from the current file:
 
@@ -116,7 +117,8 @@ Pattern | Returns
 `:10,20g/^/ mo 10`| Reverse the order of the lines starting from the line 10 up to the line 20.
 `:'a,'b g/^Error/ . w >> errors.txt` | Here is a modified example from Walter Zintz vi tutorial. In the text block marked by 'a and 'b find all the lines starting with Error and copy (append) them to "errors.txt" file. Note: . (current line address) in front of the w is very important, omitting it will cause :write to write the whole file to "errors.txt" for every Error line found.
 
-You can give multiple commands after :global using "|" as a separator. If you want to use "|' in an argument, precede it with "\'. Another example from Zintz tutorial:
+
+You can give multiple commands after :global using `|` as a separator. If you want to use `|` in an argument, precede it with `\`. Another example from Zintz tutorial:
 
 ```
 :g/^Error:/ copy $ | s /Error/copy of the error/

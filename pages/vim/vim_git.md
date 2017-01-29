@@ -11,8 +11,7 @@ folder: vim
 
 ## Fugitive
 
-* Vim Git Workflow: <https://www.youtube.com/watch?v=GUptUQGrJLE>
-
+Vim Git Workflow: <https://www.youtube.com/watch?v=GUptUQGrJLE>
 
 ### Fugitive Commands
 Use the `:Git` command to run git commands in Vim.

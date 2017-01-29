@@ -36,8 +36,8 @@ Key | Action
 `]q`     |`:cnext`|
 `[Q`     |`:cfirst`|
 `]Q`     |`:clast`|
-`[<C-Q>` |`:cpfile`| (Note that <C-Q> only works in a terminal if you disable
-`]<C-Q>` |`:cnfile`| flow control: stty -ixon)
+`[<C-Q>` |`:cpfile`| (Note that <C-Q> only works in a terminal if you disable flow control.)
+`]<C-Q>` |`:cnfile`| 
 `[t`     |`:tprevious`|
 `]t`     |`:tnext`|
 `[T`     |`:tfirst`|

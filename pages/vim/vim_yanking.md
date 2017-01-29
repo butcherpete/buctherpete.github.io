@@ -44,5 +44,5 @@ Command | Affect
 `P` | Paster contents before the cursor.
 
 ## Alfred's Clipboard History
-https://www.alfredapp.com/help/features/clipboard/
+<https://www.alfredapp.com/help/features/clipboard/>
 

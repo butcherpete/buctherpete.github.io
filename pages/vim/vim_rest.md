@@ -9,6 +9,8 @@ permalink: vim_rest.html
 folder: vim 
 ---
 
+## Marking Up Headers
+
 A naïve approach (no plugins or scripting) would be `Esc`+ `Y` + `p` + `V` + `r` + `=`
 
 1. `Y` + `p` duplicates the current line and puts the cursor on the lower line.

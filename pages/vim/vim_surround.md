@@ -9,16 +9,16 @@ permalink: vim_surround.html
 folder: vim 
 ---
 
-## Vim Surround
+## Overview 
+
+<https://github.com/tpope/vim-surround>
 
 * Delete surroundings: `ds`
-* Change surroundings: `cs` | `cS`
-* Add surroundings: `ys` | `yS` | `ySS`
-* Visual mode: `vS` | `vgS`
+* Change surroundings: `cs` or `cS`
+* Add surroundings: `ys` , `yS` or `ySS`
+* Visual mode: `vS` or `vgS`
 
-https://github.com/tpope/vim-surround
-
-### Change Surroundings
+## Change Surroundings
 Change surroundings is `cs` .  It takes two arguments, a target like with `ds`, and a replacement.
 
 `cS` changes surroundings, placing the surrounded text on its own line(s) like `yS`.  Details about the second argument can be found below in _surround-replacements_.  Once again, examples are in order.
@@ -40,7 +40,7 @@ Key | Action
 `cst"` | Replaces surrounding tag with `"`
 
 
-### Delete Surroundings
+## Delete Surroundings
 Delete surroundings is `ds`.  The next character given determines the targetted delete.  The exact nature of the target is explained in _surround-targets_ but essentially it is the last character of a _text-object_.
 
 This mapping deletes the difference between the "i"nner object and "a"n object.  This is easiest to understand with some examples:
@@ -51,7 +51,7 @@ Before | Action | After
 (123+4*56)/2 |   `ds)`  |        123+456/2
 \<div>Yo!*\</div>  |  `dst`   |       Yo!
 
-### Add Surroundings
+## Add Surroundings
 `ys` takes a valid Vim motion or text object as the first object, and wraps it using the second argument as with `cs`.  (It's a stretch, but a good mnemonic for `ys` is "you surround".)
 
 Before | Action | After
@@ -67,7 +67,6 @@ Hello w*orld!   |      `yssB`      |      {Hello world!}
 
 There is also `yS` and `ySS` which indent the surrounded text and place it on a line of its own.
 
-
 Description:
 
 Key | Action
@@ -75,24 +74,24 @@ Key | Action
 `ysiw]` | Surrounds text object with `]`
 Visual select + `S<p class="x">` | Surround text in element.
 
-### Visual Mode Surroundings
+## Visual Mode Surroundings
 
-### Targets
+## Targets
 
 The  Vim Surround `ds` and `cs` commands both take a target as their first argument.  The possible targets are based closely on the _text-objects_ provided by Vim.
 
 All targets are currently just one character.
 
-#### Punctuation Marks
+### Punctuation Marks
 Eight punctuation marks, `(`, `)`, `{`, `}`, `[`, `]`, `<`, and `>`, represent themselves and their counterparts.
 
 If the opening mark is used, contained whitespace is
 also trimmed.  The targets `b`, `B`, `r`, and `a` are aliases for `)`, `}`, `]`, and `>` (the first two mirror Vim; the second two are completely arbitrary and subject to change).
 
-#### Quotation Marks
+### Quotation Marks
 Three quote marks, `'`, `"`, `` ` ``, represent themselves, in pairs.  They are only searched for on the current line.
 
-#### Tag Alias
+### Tag Alias
 A `t` is a pair of HTML or XML tags.  See _tag-blocks_ for details.
 
 Remember that you can specify a numerical argument if you want to get to a tag other than the innermost one.

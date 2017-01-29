@@ -9,31 +9,33 @@ permalink: vim_spellcheck.html
 folder: vim 
 ---
 
-http://vimcasts.org/episodes/spell-checking/
+<http://vimcasts.org/episodes/spell-checking/>
 
-Spell check.
+To turn on spell check.
 
 ```
 :set spell
 ```
-Set spelling language to American English.
+
+To set spelling language to American English.
 
 ```
 :set spelllang=en_us
 ```
 
-Jump backward.
+To jump backward.
 
 ```
 [s
 ```
-Jump forward.
+
+To jump forward.
 
 ```
 ]s
 ```
 
-Suggest correct spelling.
+To view suggested correct spelling.
 
 ```
 z=

@@ -16,11 +16,13 @@ To select the contents of a tag (`t`):
 ```
 vit
 ```
+
 To select the content of the outer tag:
 
 ```
 v_it
 ```
+
 To select tags:
 
 Action  |  Selection
@@ -31,6 +33,7 @@ Action  |  Selection
 `yit`  | this
 
 ## Text Objects Selection
+
 Text Object  | Selection
 ---          | ------
 `a)` / `i)`  | all / inside paretheses
