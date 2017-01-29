@@ -293,3 +293,15 @@ entries:
         - title: Troubleshooting pages
           url: /tag_troubleshooting.html
           output: web
+
+  - title: Film 
+    output: web, pdf
+
+    folderitems:
+    - title: Film italiani 
+      url: /mydoc_film_italiani.html
+      output: web, pdf
+
+    - title: Samurai Films 
+      url: /mydoc_samurai_films.html
+      output: web, pdf
