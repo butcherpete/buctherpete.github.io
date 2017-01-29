@@ -9,9 +9,9 @@ permalink: vim_folding.html
 folder: vim 
 ---
 
-http://vimcasts.org/episodes/how-to-fold/
+<http://vimcasts.org/episodes/how-to-fold/>
 
-https://github.com/nelstrom/vim-markdown-folding
+<https://github.com/nelstrom/vim-markdown-folding>
 
 
 ### Essentials

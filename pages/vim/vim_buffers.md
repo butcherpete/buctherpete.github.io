@@ -9,7 +9,7 @@ permalink: vim_buffers.html
 folder: vim 
 ---
 
-http://vimcasts.org/episodes/working-with-buffers/
+<http://vimcasts.org/episodes/working-with-buffers/>
 
 These commands show and navigate through the buffer list:
 

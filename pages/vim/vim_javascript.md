@@ -9,7 +9,7 @@ permalink: vim_javascript.html
 folder: vim 
 ---
 
-https://github.com/nodejs/node/wiki/Vim-Plugins
+<https://github.com/nodejs/node/wiki/Vim-Plugins>
 
-http://vimawesome.com/plugin/node
+<http://vimawesome.com/plugin/node>
 
