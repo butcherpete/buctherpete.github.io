@@ -41,6 +41,7 @@ Key | Action
 `gE`  | End of previous WORD
 
 WORDs are bigger than words.
+
 * A WORD consists of a sequence of non-blank characters is separated by white space. Both _we're_ and _e.g._ are WORDs.
 * A word consists of a sequence of letters, digits, and underscores.
 

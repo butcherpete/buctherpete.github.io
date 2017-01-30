@@ -31,7 +31,7 @@ Command  |  Action
 
 ## Vinegar
 
-https://github.com/tpope/vim-vinegar
+(https://github.com/tpope/vim-vinegar)
 
 Command  |  Action
 ---     |  ------
