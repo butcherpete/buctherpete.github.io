@@ -1,5 +1,5 @@
 body {
-    font-size:15px;
+    font-size:1rem;
 }
 
 .bs-callout {
@@ -607,8 +607,8 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-h3 {color: #ED1951; font-weight:normal; font-size:130%;}
-h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
+h3 {font-weight:normal; font-size:130%;}
+h4 {color: #808080; font-weight:normal; font-size:120%; }
 
 .alert, .callout {
     overflow: hidden;
@@ -679,8 +679,9 @@ button.cursorNorm {
 }
 
 h2  {
-    font-size:24px;
-    line-height:29px;
+    font-size:1.5rem;
+    line-height:1.5;
+    margin-bottom:1.125rem;
 }
 span.otherProgrammingLanguages {
     font-style: normal;

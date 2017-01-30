@@ -41,6 +41,7 @@ a:active,
 a:hover {
   outline: 0;
 }
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -249,10 +250,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  /*color: #77777a; */
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;  
+  line-height: 1.5;
+  color: #77777a; 
   background-color: #ffffff;
 }
 input,
@@ -383,7 +385,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -406,8 +408,8 @@ h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.125rem;
 }
 h4,
 h5,
@@ -445,7 +447,7 @@ h1 small,
 }
 h2 small,
 .h2 small {
-  font-size: 18px;
+  font-size: 1.125rem; 
 }
 h3 small,
 .h3 small,

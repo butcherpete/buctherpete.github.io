@@ -10,8 +10,8 @@ body {
   line-height:1.5; }
 
 
-h3 {color: #015CAE; }
-h4 {color: #808080; }
+h3 {color: black; }
+h4 {color: black; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     background-color: #248ec2;
