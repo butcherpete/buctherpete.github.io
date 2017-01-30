@@ -403,5 +403,5 @@ entries:
       output: web, pdf
 
     - title: Jidaigeki Films 
-      url: /mydoc_jidaigeki.html
+      url: /mydoc_film_jidaigeki.html
       output: web, pdf
