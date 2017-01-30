@@ -3,7 +3,7 @@ title:Jidaigeki Film
 tags: [film]
 keywords: film
 last_updated: January 28, 2017
-summary: "A catalog of Japanese 'Samurai' movies."
+summary: "A catalog of Japanese Samurai movies."
 sidebar: mydoc_sidebar
 permalink: mydoc_film_jidaigeki.html
 folder: mydoc
