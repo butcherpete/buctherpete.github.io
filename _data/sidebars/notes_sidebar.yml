@@ -55,6 +55,18 @@ entries:
       url: /p1_sample5.html
       output: web, pdf
 
+  - title: Jekyll Notes
+    output: web, pdf
+
+    folderitems:
+    - title: Sample 4
+      url: /p1_sample4.html
+      output: web, pdf
+
+    - title: Sample 5
+      url: /p1_sample5.html
+      output: web, pdf
+
   - title: NodeJS Notes
     output: web, pdf
 
