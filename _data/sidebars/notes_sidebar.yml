@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: Product1
+  product: Tech Notes 
   version: 1.0
   folders:
 
@@ -20,7 +20,7 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Getting Started
+  - title: ACK Notes
     output: web, pdf
     folderitems:
     - title: Product 1 home
@@ -31,15 +31,7 @@ entries:
       url: /p1_sample1.html
       output: web, pdf
 
-    - title: Sample 2
-      url: /p1_sample2.html
-      output: web, pdf
-
-    - title: Sample 3
-      url: /p1_sample3.html
-      output: web, pdf
-
-  - title: Another heading
+  - title: Bash Notes
     output: web, pdf
 
     folderitems:
@@ -51,10 +43,138 @@ entries:
       url: /p1_sample5.html
       output: web, pdf
 
-    - title: Sample 6
-      url: /p1_sample6.html
+  - title: Git Notes
+    output: web, pdf
+
+    folderitems:
+    - title: Sample 4
+      url: /p1_sample4.html
       output: web, pdf
 
-    - title: Sample 7
-      url: /p1_sample7.html
+    - title: Sample 5
+      url: /p1_sample5.html
+      output: web, pdf
+
+  - title: NodeJS Notes
+    output: web, pdf
+
+    folderitems:
+    - title: Sample 4
+      url: /p1_sample4.html
+      output: web, pdf
+
+    - title: Sample 5
+      url: /p1_sample5.html
+      output: web, pdf
+
+  - title: Vim Notes
+    output: web, pdf
+
+    folderitems:
+    - title: Vim Notes Omnibus 
+      url: /mydoc_vim_notes.html
+      output: web, pdf
+
+    - title: Airline 
+      url: /vim_airline.html
+      output: web, pdf
+
+    - title: Bookmarks 
+      url: /vim_bookmarks.html
+      output: web, pdf
+
+    - title: Buffers 
+      url: /vim_buffers.html
+      output: web, pdf
+
+    - title: Command Line 
+      url: /vim_command_line.html
+      output: web, pdf
+
+    - title: File Explorer 
+      url: /vim_explorer.html
+      output: web, pdf
+
+    - title: Folding 
+      url: /vim_folding.html
+      output: web, pdf
+
+    - title: Git 
+      url: /vim_git.html
+      output: web, pdf
+
+    - title: HTML 
+      url: /vim_html.html
+      output: web, pdf
+
+    - title: JavaScript 
+      url: /vim_javascript.html
+      output: web, pdf
+
+    - title: Markdown 
+      url: /vim_markdown.html
+      output: web, pdf
+
+    - title: Miscellany 
+      url: /vim_misc.html
+      output: web, pdf
+
+    - title: Motions 
+      url: /vim_moving.html
+      output: web, pdf
+
+    - title: Restructured Text 
+      url: /vim_rest.html
+      output: web, pdf
+
+    - title: Search 
+      url: /vim_search.html
+      output: web, pdf
+
+    - title: Spellchecking 
+      url: /vim_spellcheck.html
+      output: web, pdf
+
+    - title: Starters 
+      url: /vim_starters.html
+      output: web, pdf
+
+    - title: Substituting 
+      url: /vim_substituting.html
+      output: web, pdf
+
+    - title: Surround 
+      url: /vim_surround.html
+      output: web, pdf
+
+    - title: Text Objects 
+      url: /vim_text_objects.html
+      output: web, pdf
+
+    - title: Unimpaired 
+      url: /vim_unimpaired.html
+      output: web, pdf
+
+    - title: Visual Blocks 
+      url: /vim_visual_blocks.html
+      output: web, pdf
+
+    - title: Windows 
+      url: /vim_windows.html
+      output: web, pdf
+
+    - title: Yanking 
+      url: /vim_yanking.html
+      output: web, pdf
+
+  - title: Xcode Notes
+    output: web, pdf
+
+    folderitems:
+    - title: Sample 4
+      url: /p1_sample4.html
+      output: web, pdf
+
+    - title: Sample 5
+      url: /p1_sample5.html
       output: web, pdf
