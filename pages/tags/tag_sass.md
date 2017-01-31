@@ -1,8 +1,8 @@
 ---
-title: Ruby Pages 
-tagName: ruby 
+title: Sass & CSS 
+tagName: sass 
 search: exclude
-permalink: tag_ruby.html
+permalink: tag_sass.html
 sidebar: notes_sidebar
 folder: tags
 ---

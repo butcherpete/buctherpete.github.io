@@ -7,7 +7,7 @@ entries:
   version: 1.0
   folders:
 
-  - title:
+  - title: 
     output: pdf
     type: frontmatter
     folderitems:
@@ -20,66 +20,83 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: ACK Notes
+  - title: ACK 
     output: web, pdf
     folderitems:
-    - title: Product 1 home
+
+    - title: ACK Resources 
       url: /p1_landing_page.html
       output: web
 
-    - title: Sample 1
+    - title: ACK Notes 
       url: /p1_sample1.html
       output: web, pdf
 
-  - title: Bash Notes
+  - title: Bash 
     output: web, pdf
 
     folderitems:
-    - title: Sample 4
+    - title: Bash Resources 
       url: /p1_sample4.html
       output: web, pdf
 
-    - title: Sample 5
+    - title: Bash Notes 
       url: /p1_sample5.html
       output: web, pdf
 
-  - title: Git Notes
+  - title: Git 
     output: web, pdf
 
     folderitems:
-    - title: Sample 4
+    - title: Git Resources 
       url: /p1_sample4.html
       output: web, pdf
 
-    - title: Sample 5
+    - title: Git Notes 
       url: /p1_sample5.html
       output: web, pdf
 
-  - title: Jekyll Notes
+  - title: Jekyll 
     output: web, pdf
 
     folderitems:
-    - title: Sample 4
-      url: /p1_sample4.html
+    - title: Jekyll Resources 
+      url: /jekyll_resources.html
       output: web, pdf
 
-    - title: Sample 5
-      url: /p1_sample5.html
+    - title: Jekyll Notes 
+      url: /notes_jekyll.html
       output: web, pdf
 
-  - title: NodeJS Notes
+  - title: NodeJS 
     output: web, pdf
 
     folderitems:
-    - title: Sample 4
+    - title: NodeJS Resources 
       url: /p1_sample4.html
       output: web, pdf
 
-    - title: Sample 5
+    - title: NodeJS Resources 
       url: /p1_sample5.html
       output: web, pdf
 
-  - title: Vim Notes
+  - title: SASS 
+    output: web, pdf
+
+    folderitems:
+    - title: Sass Resources 
+      url: /p1_sample4.html
+      output: web, pdf
+
+    - title: Sass Notes 
+      url: /p1_sample5.html
+      output: web, pdf
+
+    - title: Px to Rem Conversion 
+      url: /notes_rem.html
+      output: web, pdf
+
+  - title: Vim 
     output: web, pdf
 
     folderitems:

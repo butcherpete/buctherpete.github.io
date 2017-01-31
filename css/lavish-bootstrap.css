@@ -328,7 +328,7 @@ hr {
   border: 0;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 1rem;
 }
 .lead {
   margin-bottom: 20px;
@@ -609,8 +609,8 @@ code {
 pre {
   display: block;
   padding: 9.5px;
-  margin: 0 0 10px;
-  line-height: 1.428571429;
+  margin: 1rem 0 2rem;
+  line-height: 1.5;
   word-break: break-all;
   word-wrap: break-word;
   color: #77777a;

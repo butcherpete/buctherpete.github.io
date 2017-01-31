@@ -182,7 +182,7 @@ table th[class*="col-"] {
 
 
 table td:first-child {
-    width: 150px;
+ /*   width: 150px; */
     /*font-weight:bold;*/
 }
 
@@ -779,7 +779,7 @@ pre, table code {
 }
 
 pre {
-    margin: 25px 0px;
+    margin: 1rem 0 2rem;
 }
 
 #json-box-container pre {

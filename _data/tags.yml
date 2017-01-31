@@ -16,3 +16,8 @@ allowed-tags:
   - git
   - javascript
   - bash
+  - ruby 
+  - jekyll 
+  - sass 
+  - markdown 
+  - html 

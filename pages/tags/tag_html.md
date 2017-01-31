@@ -1,8 +1,8 @@
 ---
-title: Ruby Pages 
-tagName: ruby 
+title: HTML Pages 
+tagName: html 
 search: exclude
-permalink: tag_ruby.html
+permalink: tag_html.html
 sidebar: notes_sidebar
 folder: tags
 ---
