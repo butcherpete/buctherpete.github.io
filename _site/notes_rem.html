@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Conversions from Px to Rem.">
+<meta name="keywords" content="sasshtml,  sass, html">
+<title>PXs, EMs, and REMs | Magpie Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Magpie Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/tomjohnson1492/documentation-theme-jekyll" target="_blank">Github Repo</a></li>
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank">Jekyll documentation</a></li>
+                        
+                        
+                        
+                        <li><a href="http://stackoverflow.com/questions/tagged/jekyll" target="_blank">Jekyll on Stack Overflow</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="notes_landing_page.html">Tech Notes</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">Product 1</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Product 2</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Magpie Documentation feedback";
+var body = "I have some feedback about the PXs, EMs, and REMs page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:magpie.picaraza@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '../search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="PXs, EMs, and REMs">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle">Tech Notes 1.0</li>
+    
+    
+    
+        
+    
+    <li>
+        <a href="#">ACK</a>
+        <ul>
+            
+            
+            
+            <li><a href="p1_landing_page.html">ACK Resources</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_sample1.html">ACK Notes</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Bash</a>
+        <ul>
+            
+            
+            
+            <li><a href="p1_sample4.html">Bash Resources</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_sample5.html">Bash Notes</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Git</a>
+        <ul>
+            
+            
+            
+            <li><a href="p1_sample4.html">Git Resources</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_sample5.html">Git Notes</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Jekyll</a>
+        <ul>
+            
+            
+            
+            <li><a href="jekyll_resources.html">Jekyll Resources</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="notes_jekyll.html">Jekyll Notes</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">NodeJS</a>
+        <ul>
+            
+            
+            
+            <li><a href="p1_sample4.html">NodeJS Resources</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_sample5.html">NodeJS Resources</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">SASS</a>
+        <ul>
+            
+            
+            
+            <li><a href="p1_sample4.html">Sass Resources</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_sample5.html">Sass Notes</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="notes_rem.html">Px to Rem Conversion</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Vim</a>
+        <ul>
+            
+            
+            
+            <li><a href="mydoc_vim_notes.html">Vim Notes Omnibus</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_airline.html">Airline</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_bookmarks.html">Bookmarks</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_buffers.html">Buffers</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_command_line.html">Command Line</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_explorer.html">File Explorer</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_folding.html">Folding</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_git.html">Git</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_html.html">HTML</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_javascript.html">JavaScript</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_markdown.html">Markdown</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_misc.html">Miscellany</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_moving.html">Motions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_rest.html">Restructured Text</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_search.html">Search</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_spellcheck.html">Spellchecking</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_starters.html">Starters</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_substituting.html">Substituting</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_surround.html">Surround</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_text_objects.html">Text Objects</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_unimpaired.html">Unimpaired</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_visual_blocks.html">Visual Blocks</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_windows.html">Windows</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="vim_yanking.html">Yanking</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Xcode Notes</a>
+        <ul>
+            
+            
+            
+            <li><a href="p1_sample4.html">Sample 4</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_sample5.html">Sample 5</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">PXs, EMs, and REMs</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Conversions from Px to Rem.</div>
+   
+
+    
+
+    
+
+    
+
+    <a target="_blank" href="https://github.com/butcherpete/documentation-theme-jekyll/blob/gh-pages/pages//_pages/notes/notes_rem.html.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    
+
+    
+
+  <h2 id="resources">Resources</h2>
+
+<p><a href="https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984">Comprehensive Guide: When to Use Em vs. Rem</a></p>
+
+<p><a href="http://engageinteractive.co.uk/blog/em-vs-rem-vs-px">EM vs REM vs PX – Why you shouldn’t “just use pixels”</a></p>
+
+<h2 id="pixel-to-rem-conversion-table">Pixel to REM Conversion Table</h2>
+<p>“[The REM] unit represents the font-size of the root element (e.g. the font-size of the &lt;html&gt;element). When used on the font-size on this root element, it represents its initial value.”</p>
+
+<p>“Translation of <code class="highlighter-rouge">rem</code> units to pixel value is determined by the font size of the html element. This font size is influenced by inheritance from the browser font size setting unless explicitly overridden with a unit not subject to inheritance.”</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PXs</th>
+      <th>REMs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10px</td>
+      <td>0.625rem</td>
+    </tr>
+    <tr>
+      <td>11px</td>
+      <td>0.6875rem</td>
+    </tr>
+    <tr>
+      <td>12px</td>
+      <td>0.75rem</td>
+    </tr>
+    <tr>
+      <td>13px</td>
+      <td>0.8125rem</td>
+    </tr>
+    <tr>
+      <td>14px</td>
+      <td>0.875rem</td>
+    </tr>
+    <tr>
+      <td>15px</td>
+      <td>0.9375rem</td>
+    </tr>
+    <tr>
+      <td>16px</td>
+      <td>1rem</td>
+    </tr>
+    <tr>
+      <td>17px</td>
+      <td>1.0625rem</td>
+    </tr>
+    <tr>
+      <td>18px</td>
+      <td>1.125rem</td>
+    </tr>
+    <tr>
+      <td>19px</td>
+      <td>1.1875rem</td>
+    </tr>
+    <tr>
+      <td>20px</td>
+      <td>1.25rem</td>
+    </tr>
+    <tr>
+      <td>21px</td>
+      <td>1.3125rem</td>
+    </tr>
+    <tr>
+      <td>22px</td>
+      <td>1.375rem</td>
+    </tr>
+    <tr>
+      <td>23px</td>
+      <td>1.4375rem</td>
+    </tr>
+    <tr>
+      <td>24px</td>
+      <td>1.5rem</td>
+    </tr>
+    <tr>
+      <td>25px</td>
+      <td>1.5625rem</td>
+    </tr>
+    <tr>
+      <td>26px</td>
+      <td>1.625rem</td>
+    </tr>
+    <tr>
+      <td>27px</td>
+      <td>1.6875rem</td>
+    </tr>
+    <tr>
+      <td>28px</td>
+      <td>1.75rem</td>
+    </tr>
+    <tr>
+      <td>29px</td>
+      <td>1.8125rem</td>
+    </tr>
+    <tr>
+      <td>30px</td>
+      <td>1.875rem</td>
+    </tr>
+    <tr>
+      <td>31px</td>
+      <td>1.9375rem</td>
+    </tr>
+    <tr>
+      <td>32px</td>
+      <td>2rem</td>
+    </tr>
+    <tr>
+      <td>33px</td>
+      <td>2.0625rem</td>
+    </tr>
+    <tr>
+      <td>34px</td>
+      <td>2.125rem</td>
+    </tr>
+    <tr>
+      <td>35px</td>
+      <td>2.1875rem</td>
+    </tr>
+    <tr>
+      <td>36px</td>
+      <td>2.25rem</td>
+    </tr>
+    <tr>
+      <td>37px</td>
+      <td>2.3125rem</td>
+    </tr>
+    <tr>
+      <td>38px</td>
+      <td>2.375rem</td>
+    </tr>
+    <tr>
+      <td>39px</td>
+      <td>2.4375rem</td>
+    </tr>
+    <tr>
+      <td>40px</td>
+      <td>2.5rem</td>
+    </tr>
+    <tr>
+      <td>41px</td>
+      <td>2.5625rem</td>
+    </tr>
+    <tr>
+      <td>42px</td>
+      <td>2.625rem</td>
+    </tr>
+    <tr>
+      <td>43px</td>
+      <td>2.6875rem</td>
+    </tr>
+    <tr>
+      <td>44px</td>
+      <td>2.75rem</td>
+    </tr>
+    <tr>
+      <td>45px</td>
+      <td>2.8125rem</td>
+    </tr>
+    <tr>
+      <td>46px</td>
+      <td>2.875rem</td>
+    </tr>
+    <tr>
+      <td>47px</td>
+      <td>2.9375rem</td>
+    </tr>
+    <tr>
+      <td>48px</td>
+      <td>3rem</td>
+    </tr>
+    <tr>
+      <td>49px</td>
+      <td>3.0625rem</td>
+    </tr>
+    <tr>
+      <td>50px</td>
+      <td>3.125rem</td>
+    </tr>
+    <tr>
+      <td>51px</td>
+      <td>3.1875rem</td>
+    </tr>
+    <tr>
+      <td>52px</td>
+      <td>3.25rem</td>
+    </tr>
+    <tr>
+      <td>53px</td>
+      <td>3.3125rem</td>
+    </tr>
+    <tr>
+      <td>54px</td>
+      <td>3.375rem</td>
+    </tr>
+    <tr>
+      <td>55px</td>
+      <td>3.4375rem</td>
+    </tr>
+    <tr>
+      <td>56px</td>
+      <td>3.5rem</td>
+    </tr>
+    <tr>
+      <td>57px</td>
+      <td>3.5625rem</td>
+    </tr>
+    <tr>
+      <td>58px</td>
+      <td>3.625rem</td>
+    </tr>
+    <tr>
+      <td>59px</td>
+      <td>3.6875rem</td>
+    </tr>
+    <tr>
+      <td>60px</td>
+      <td>3.75rem</td>
+    </tr>
+    <tr>
+      <td>61px</td>
+      <td>3.8125rem</td>
+    </tr>
+    <tr>
+      <td>62px</td>
+      <td>3.875rem</td>
+    </tr>
+    <tr>
+      <td>63px</td>
+      <td>3.9375rem</td>
+    </tr>
+    <tr>
+      <td>64px</td>
+      <td>4rem</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="tags">
+    
+    <b>Tags: </b>
+    
+    
+    
+    <a href="tag_sass" class="btn btn-default navbar-btn cursorNorm" role="button">sass</a>
+    
+    
+    
+    <a href="tag_html" class="btn btn-default navbar-btn cursorNorm" role="button">html</a>
+    
+    
+    
+</div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2017 Magpie Entropy Ltd.. All rights reserved. <br />
+<p>Page last updated:</span> January 30, 2017<br/> Site last generated: Jan 31, 2017 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+    <script>
+    jQuery(function ($) {
+        $('.post-content').annotator()
+                .annotator('setupPlugins', {tokenUrl: 'http://example.com/api/token'})
+    });
+    </script>
+</body>
+
+</html>
