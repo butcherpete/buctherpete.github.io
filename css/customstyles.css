@@ -256,17 +256,25 @@ ul#results-container a: hover {
     margin: 3px;
 }
 
+div#toc {
+    font-size: 0.875rem;
+}
+
+
 div#toc ul li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
 }
 div#toc ul {
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 5px;
+    /* background-color: whitesmoke; */
+     padding: 5px; 
+    padding-top:0px;
+    padding-bottom:0px;
+    /* border-radius: 5px; */
     max-width: 300px;
     color: gray;
+    border-left: 2px solid #039be5;
 }
 
 div#toc ul li ul {
@@ -279,7 +287,7 @@ div#toc ul li ul li::before {
 }
 
 div#toc >ul::before {
-    content: "Table of Contents";
+    content: "Contents";
     font-weight: 500;
     color: #555;
     text-align:center;
@@ -592,7 +600,8 @@ a[data-toggle] {
     font-size:1rem;
     color: #808080;
     margin:1.25rem 0rem 1.25rem 0rem;
-    border-left: 2px solid #ED1951;
+ /*   border-left: 2px solid #ED1951; */
+    background-color:whitesmoke;
     padding-left: 0.625rem;
 }
 
@@ -779,7 +788,7 @@ pre, table code {
 }
 
 pre {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1rem;
 }
 
 #json-box-container pre {

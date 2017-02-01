@@ -40,8 +40,8 @@ entries:
       url: /p1_sample4.html
       output: web, pdf
 
-    - title: Bash Notes 
-      url: /p1_sample5.html
+    - title: Animated Gifs 
+      url: /notes_gifs.html
       output: web, pdf
 
   - title: Git 
@@ -52,8 +52,12 @@ entries:
       url: /p1_sample4.html
       output: web, pdf
 
-    - title: Git Notes 
-      url: /p1_sample5.html
+    - title: Git Aliases 
+      url: /git_alias.html
+      output: web, pdf
+
+    - title: Git Merge 
+      url: /git_merge.html
       output: web, pdf
 
   - title: Jekyll 

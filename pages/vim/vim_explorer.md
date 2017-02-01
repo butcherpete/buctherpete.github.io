@@ -4,7 +4,7 @@ tags: [vim]
 keywords: vim 
 last_updated: January 29, 2017
 summary: "A crib of Vim tips and tricks."
-sidebar: mydoc_sidebar
+sidebar: notes_sidebar
 permalink: vim_explorer.html
 folder: vim 
 ---
@@ -31,7 +31,9 @@ Command  |  Action
 
 ## Vinegar
 
-(https://github.com/tpope/vim-vinegar)
+vinegar.vim: combine with netrw to create a delicious salad dressing.
+[vim-vinegar](https://github.com/tpope/vim-vinegar)
+
 
 Command  |  Action
 ---     |  ------

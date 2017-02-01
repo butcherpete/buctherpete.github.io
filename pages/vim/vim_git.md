@@ -1,17 +1,20 @@
 ---
 title: Vim Git 
-tags: [vim]
+tags: [vim, git]
 keywords: vim 
-last_updated: January 29, 2017
+last_updated: February 1, 2017
 summary: "A crib of Vim tips and tricks."
-sidebar: mydoc_sidebar
+sidebar: notes_sidebar
 permalink: vim_git.html
 folder: vim 
 ---
 
+## Resources
+[Drew Neil on Vim and Workflow](https://www.youtube.com/watch?v=GUptUQGrJLE)
+
 ## Fugitive
 
-Vim Git Workflow: <https://www.youtube.com/watch?v=GUptUQGrJLE>
+[vim-fugitive](https://github.com/tpope/vim-fugitive)
 
 ### Fugitive Commands
 Use the `:Git` command to run git commands in Vim.
@@ -105,8 +108,7 @@ You can open the index version of a working file using the following commands:
 ```
 
 ### Git Aliases
-
-<http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/>
+[Must Have Git Aliases: Advanced Examples](http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/)
 
 To set a git alias:
 
@@ -195,6 +197,7 @@ Command | Description
 `:Gwrite!` | Writes the selected branch target (left) or merge  (right) to the commit and closes the other windows.
 
 ## Gitgutter
+[Git Gutter Plugin](https://github.com/jisaacks/GitGutter)
 
 Displays a git diffs in the gutter column that shows each line that was added, modified, or removed. You can also state or undo individual hunks.
 

@@ -4,7 +4,7 @@ tags: [vim]
 keywords: vim 
 last_updated: January 29, 2017
 summary: "A crib of Vim tips and tricks."
-sidebar: mydoc_sidebar
+sidebar: notes_sidebar
 permalink: vim_misc.html
 folder: vim 
 ---
