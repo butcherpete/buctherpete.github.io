@@ -49,11 +49,15 @@ entries:
 
     folderitems:
     - title: Git Resources 
-      url: /p1_sample4.html
+      url: /get_resources.html
       output: web, pdf
 
     - title: Git Aliases 
       url: /git_alias.html
+      output: web, pdf
+
+    - title: .gitignore 
+      url: /git_gitignore.html
       output: web, pdf
 
     - title: Git Merge 
@@ -70,6 +74,10 @@ entries:
 
     - title: Jekyll Notes 
       url: /notes_jekyll.html
+      output: web, pdf
+
+    - title: Markdown 
+      url: /notes_markdown.html
       output: web, pdf
 
   - title: NodeJS 
@@ -142,10 +150,6 @@ entries:
 
     - title: JavaScript 
       url: /vim_javascript.html
-      output: web, pdf
-
-    - title: Markdown 
-      url: /vim_markdown.html
       output: web, pdf
 
     - title: Miscellany 

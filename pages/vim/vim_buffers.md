@@ -14,7 +14,7 @@ folder: vim
 
 [Vimcast: Working with Buffers](http://vimcasts.org/episodes/working-with-buffers/)
 
-These commands show and navigate through the buffer list (arglist):
+These commands show and navigate through the buffer list: 
 
 Command  | Action
 ----     |  ------
@@ -23,6 +23,16 @@ Command  | Action
 `:bp` |  Open the previous buffer in the current window (cycles from the start of the list to the end).
 `:b2` |  Open buffers in the current window by specifying the buffer number.
 `CTRL-^` |   Switch to the alternate file.
+
+
+Explaining the buffer list:
+
+Symbol  |  Meaning
+----     |  ------
+`a`  | Identifes the active buffer.
+`h` | Identifies a hidden buffer.
+`%` | Identfies the buffer displayed in the current window.
+`#` | Identifies the alternate buffer, which can be accessed by pressing `CTRL-^`.
 
 
 ## Opening Multiple Files into Buffers

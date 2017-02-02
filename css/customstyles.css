@@ -83,7 +83,7 @@ padding-top: 60px;
 margin-top: -40px
 }
 
-body h1 {margin-top:40px;}
+body h1 {margin-top:2.5rem;}
 
 .post-content img {
     margin: 12px 0px 3px 0px;
@@ -258,14 +258,27 @@ ul#results-container a: hover {
 
 div#toc {
     font-size: 0.875rem;
+    margin-top: 2.5rem;
 }
 
 
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
-    font-size: 90%;
-    list-style: square;
+    margin: 8px 0px 8px 10px;
+    font-size: .75rem;
+    list-style: none;
 }
+
+div#toc ul li a {
+    color:#555;
+    text-decoration: none;
+}
+
+div#toc ul li a:hover{
+    color: #039be5;
+    text-decoration: none;
+}
+
+
 div#toc ul {
     /* background-color: whitesmoke; */
      padding: 5px; 
@@ -274,7 +287,7 @@ div#toc ul {
     /* border-radius: 5px; */
     max-width: 300px;
     color: gray;
-    border-left: 2px solid #039be5;
+    border-left: 3px solid #039be5;
 }
 
 div#toc ul li ul {
@@ -288,7 +301,7 @@ div#toc ul li ul li::before {
 
 div#toc >ul::before {
     content: "Contents";
-    font-weight: 500;
+    font-weight: bolder;
     color: #555;
     text-align:center;
     margin-left:auto;
@@ -320,6 +333,7 @@ li.dropdownActive a {
 
 footer {
     font-size: smaller;
+    background-color:aqua;
 }
 
 /* FAQ page */
@@ -602,7 +616,8 @@ a[data-toggle] {
     margin:1.25rem 0rem 1.25rem 0rem;
  /*   border-left: 2px solid #ED1951; */
     background-color:whitesmoke;
-    padding-left: 0.625rem;
+ /*   padding-left: 0.625rem; */
+    padding: 1rem;
 }
 
 .summary:before {

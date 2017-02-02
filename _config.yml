@@ -31,7 +31,7 @@ exclude:
 feedback_email: magpie.picaraza@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
@@ -94,6 +94,7 @@ sidebars:
 - product1_sidebar
 - product2_sidebar
 - other
+- notes_sidebar
 
 description: "Adapted from Tom Johnson's Jekyll theme for documentation."
 # the description is used in the feed.xml file

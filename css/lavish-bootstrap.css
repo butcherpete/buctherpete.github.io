@@ -633,12 +633,23 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+
+/*
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+*/
+
+.container {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .container:before,
 .container:after {
   content: " ";
@@ -664,9 +675,10 @@ pre code {
   clear: both;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  /* margin-left: -15px; */
+  /* margin-right: -15px; */
 }
+
 .row:before,
 .row:after {
   content: " ";
@@ -971,7 +983,7 @@ pre code {
   }
   .col-md-3 {
     width: 25%;
-  }
+}
   .col-md-4 {
     width: 33.33333333333333%;
   }
@@ -1110,7 +1122,8 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+   /*  max-width: 1170px; */
+    max-width: 1400px;
   }
   .col-lg-1,
   .col-lg-2,
