@@ -64,10 +64,24 @@ From _Practical Vim_.
 
 Command  | Action
 ----     |  ------
-`:bd` | Close the current buffer.
-`:bw2` | Close buffers by specifying he buffer number, i.e. `:bw2`
-`:1,3bw` | Close a range of buffers.
+`:bd`, `:bdelete` | Unloads the current buffer and deletes if from the buffer list. The buffer is not completely deleted. It is removed from the buffer list, option values, variables, and mappings are cleared.
+`:bw`, `:bwipeout` | Deletes the current buffer. Everything related to the buffer is lost.
+`:bw2` | Deletes buffers by specifying he buffer number, i.e. `:bw2`
+`:1,3bw` | Deletes a range of buffers.
 
+
+[vim-bdubs](https://github.com/jbranchaud/vim-bdubs)
+
+Command  | Action
+----     |  ------
+`:BD`       | Deletes all but the current buffer
+`:BD3`      | Deletes all but the 3 most recently used buffers
+`:BW`       | Wipes out all but the current buffer
+`:BW2`      | Wipes out all but the 2 most recently used buffers
+
+* Uses `:bdelete` to delete all of the buffers in the buffer-list except for the current buffer.
+* Uses `:bwipeout` to delete all of the buffers in the buffer-list except for the current buffer. Because of the
+way `:bw` works, each deleted buffer will be unloaded and entirely removed from the buffer list.
 
 ## Buffers in Airline
 
