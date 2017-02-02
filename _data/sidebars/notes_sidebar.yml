@@ -44,6 +44,10 @@ entries:
       url: /notes_gifs.html
       output: web, pdf
 
+    - title: Essential Command Line 
+      url: /bash_skills.html
+      output: web, pdf
+
   - title: Git 
     output: web, pdf
 
@@ -192,7 +196,7 @@ entries:
       url: /vim_unimpaired.html
       output: web, pdf
 
-    - title: Visual Blocks 
+    - title: Visual Mode 
       url: /vim_visual_blocks.html
       output: web, pdf
 

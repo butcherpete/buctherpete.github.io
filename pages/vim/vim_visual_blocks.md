@@ -1,5 +1,5 @@
 ---
-title: Visual Blocks 
+title: Visual Mode 
 tags: [vim]
 keywords: vim 
 last_updated: January 29, 2017
@@ -10,9 +10,10 @@ permalink: vim_visual_blocks.html
 folder: vim 
 ---
 
-[vimcasts 22: Selecting columns with visual block mode](http://vimcasts.org/episodes/selecting-columns-with-visual-block-mode/)
 
 ## Entering and Exiting Visual Modes
+
+Visual mode has three submodes: character-wise mode, line-wise mode, and block-wise mode.
 
 Command	| Action
 -------- | --------
@@ -33,9 +34,11 @@ Command	| Action
 
 ## Operating on Visual Blocks 
 
+[vimcasts 22: Selecting columns with visual block mode](http://vimcasts.org/episodes/selecting-columns-with-visual-block-mode/)
+
 Command	| Action
 -------- | --------
-`c` |	Change selection (delete and switch to insert mode).
+`c` |	Change selection (delete and switch to Insert mode).
 `I`	| Insert in front of cursor.
 `A`	| Append after cursor.
 `r`	| Replace every character in selection.

@@ -15,6 +15,7 @@ folder: notes
 * [Jekyll Documentation](https://jekyllrb.com/docs/home/)
 * [Jekyll on Stackoverflow](https://stackoverflow.com/questions/tagged/jekyll)
 * [I'd Rather Be Writing](http://idratherbewriting.com/category-jekyll/)
+* [How to create data-driven navigation in Jekyll](http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll)
 
 ## Jekyll Themes 
 * [documentation-theme-jekyll](https://github.com/tomjohnson1492/documentation-theme-jekyll)
