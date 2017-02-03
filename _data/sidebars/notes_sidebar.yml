@@ -208,14 +208,14 @@ entries:
       url: /vim_yanking.html
       output: web, pdf
 
-  - title: Xcode Notes
+  - title: iOS
     output: web, pdf
 
     folderitems:
-    - title: Sample 4
-      url: /p1_sample4.html
+    - title: Jazzy 
+      url: /jazzy_notes.html
       output: web, pdf
 
-    - title: Sample 5
-      url: /p1_sample5.html
+    - title: Xcode 
+      url: /xcode_notes.html
       output: web, pdf

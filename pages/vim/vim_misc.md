@@ -10,13 +10,23 @@ folder: vim
 ---
 
 
-## <a id="markdown">Markdown Preview</a>
+## Markdown Preview
 
 I installed grip using homebrew. Grip provides the Github flavored markdown formatting.
 
 ```
 $ grip filename.md
 ```
+
+## Pandoc
+
+[Vimcast 64:Using external filter commands to reformat HTML](http://vimcasts.org/episodes/using-external-filter-commands-to-reformat-html/)
+
+Use the bang Ex command to filter the contents of the current buffer through a pandoc pipeline:
+
+~~~
+:%!pandoc --from=html --to=markdown | pandoc --from=markdown --to=html
+~~~
 
 ## URLs
 
@@ -25,7 +35,7 @@ Command | Action
 `gx` |  Opens URL under cursor.
 
  
-## <a id="emojis">Emojis</a>
+## Emojis
 
 <http://www.webpagefx.com/tools/emoji-cheat-sheet/>
 
