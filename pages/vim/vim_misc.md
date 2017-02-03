@@ -9,6 +9,9 @@ permalink: vim_misc.html
 folder: vim 
 ---
 
+## Useful Commands
+
+[Stackoverflow: Simple Vim commands you wish you'd known earlier](https://stackoverflow.com/questions/1276403/simple-vim-commands-you-wish-youd-known-earlier)
 
 ## Markdown Preview
 

@@ -27,21 +27,43 @@ To select tags:
 
 Action  |  Selection
 ---     |  ------
-`cit`  | delete tag contents & insert mode
-`dit`  | delete tag contents
-`vit`  | select tag contents & visual mode
-`yit`  | this
+`cit`  | Delete tag contents & insert mode.
+`dit`  | Delete tag contents.
+`vit`  | Select tag contents & visual mode.
+`yit`  | Yank tag contents. 
 
 ## Text Objects Selection
 
 Text Object  | Selection
 ---          | ------
-`a)` / `i)`  | all / inside paretheses
-`a}` / `i}`  | all / inside braces
-`a]` / `i]`  | all / inside brackets
-`a>` / `i>`  | all / inside angle brackets
-`a'` / `i'`  | all / inside single quote
-`a"` / `i"`  | all / inside double quote
-`` a` `` / ``i` `` | all / inside backticks
-`at` / `it`  | all / inside tags
+`a)` / `i)`  | All / inside paretheses.
+`a}` / `i}`  | All / inside braces.
+`a]` / `i]`  | All / inside brackets.
+`a>` / `i>`  | All / inside angle brackets.
+`a'` / `i'`  | All / inside single quote.
+`a"` / `i"`  | All / inside double quote.
+`` a` `` / ``i` `` | All / inside backticks.
+`at` / `it`  | All / inside tags.
+`a_` / `i_`  | All / inside underscores. (vim-textobj-underscore)
+
+
+
+## Custom Text Objects
+[vim-textobj-user](https://github.com/kana/vim-textobj-user)
+
+vim-textobj-user is a library plugin for Vim to define your own text objects without handling many edge cases and complex stuffs.
+
+A list of predefined text objects implemeneted using vim-textobj-user.
+
+[Text Object Plugins](https://github.com/kana/vim-textobj-user/wiki)
+
+Plugins Installed
+
+* vim-textobj-underscore: Works in Visual mode; In Default mode, works if cursor is over and underscore or blank space.
+
+## targets-vim
+I removed this plugin. It worked in Visual mode, but not not in Default mode. Also it appeared to overwrite some default Vim behaviors and I was concerned that it might conflict with surround-vim.
+
+[targets.vim](https://github.com/wellle/targets.vim)
+
 

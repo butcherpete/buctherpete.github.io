@@ -9,11 +9,30 @@ permalink: vim_starters.html
 folder: vim 
 ---
 
+
+Getting Information and Help
 To get information:
 
 ```
 :version
 ```
+
+## .vimrc
+
+To open vimrc within Vim:
+
+~~~~
+:e $MYVIMRC
+~~~~
+
+To source the vimrc within Vim:
+
+~~~~
+:so $MYVIMRC
+
+" If the .vimrc is activ
+:so %
+~~~~
 
 ## Brew
 
