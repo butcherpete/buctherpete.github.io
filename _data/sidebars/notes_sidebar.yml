@@ -29,7 +29,7 @@ entries:
       output: web
 
     - title: ACK Notes 
-      url: /p1_sample1.html
+      url: /ack_notes.html
       output: web, pdf
 
   - title: Bash 

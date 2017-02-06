@@ -76,6 +76,43 @@
 </div>
 <!-- /.container -->
     </div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/jquery.tocify.min.js"></script>
+  <script src="../js/prettify.js"></script>
+  <script src="../js/prism.js"></script>
+	  <script>
+      $(function() {
+        var toc = $("#toc").tocify({
+          selectors: "h2,h3,h4"
+        }).data("toc-tocify");
+     /* Sets extendPage to false
+    toc.setOption("extendPage", "false"); */
+				
+	  // Sets the showEffect, scrollTo, and smoothScroll options
+    toc.setOptions({ showEffect: "fadeIn", extendPage: false });
+     
+      prettyPrint();
+        $(".optionName").popover({
+          trigger: "hover"
+        });
+       
+         
+   
+    $('#toc').affix({
+    offset: {     
+      top: $('#toc').offset().top,
+      bottom: ($('.footer').outerHeight(true) + $('.application').outerHeight(true)) + 40
+    }
+});
+      });  
+      
+ </script>
+
     <script>
     jQuery(function ($) {
         $('.post-content').annotator()

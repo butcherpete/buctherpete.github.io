@@ -27,3 +27,52 @@ folder: notes
 ## Static Site Generators
 
 * [StaticGen](https://www.staticgen.com/)
+
+## Jekyll File Structure
+
+This is the default tree structure:
+
+~~~~~
+`root`/
+│── `.gitignore`
+│── `.sass-cache`
+│── `config-yml`
+│── `_posts`/
+│── `about.md`
+│── `Gemfile`
+│── `Gemfile.lock`
+└── `index.md`
+~~~~~
+
+Gem-based theme system. The default theme is `minima`. To view the `minima` files, run the follow command:
+
+~~~~~
+$ bundle show minima
+/usr/local/lib/ruby/gems/2.4.0/gems/minima-2.1.0
+
+$ open  /usr/local/lib/ruby/gems/2.4.0/gems/minima-2.1.0
+~~~~~
+
+Copy the files to the directory. The local files will overwrite the remote files.
+
+~~~~~
+`root`/
+│── `.gitignore`
+│── `.sass-cache`
+│── `config-yml`
+│── `_posts`/
+│── `_layouts`/
+│── `_sass`/
+│── `_site`/
+│── `assets`/
+│── `index.md`
+│── `LICENSE.md`
+│── `README.md`
+│── `about.md`
+│── `Gemfile`
+└── `Gemfile.lock`
+
+~~~~~
+
+
+

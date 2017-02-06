@@ -21,6 +21,17 @@ I installed grip using homebrew. Grip provides the Github flavored markdown form
 $ grip filename.md
 ```
 
+## Fenced Code Blocks
+
+
+`Esc` + *n* + `i` + `~` + `Esc`
+
+For example `5i~Esc`.
+
+~~~~~ swift
+Code Sample
+~~~~~
+
 ## Pandoc
 
 [Vimcast 64:Using external filter commands to reformat HTML](http://vimcasts.org/episodes/using-external-filter-commands-to-reformat-html/)

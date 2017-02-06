@@ -12,6 +12,48 @@ folder: vim
 ## Resources
 [Drew Neil on Vim and Workflow](https://www.youtube.com/watch?v=GUptUQGrJLE)
 
+## Vim as Diff Tool
+
+
+### Configuration
+[Viewing all `git diffs` with vimdiff](https://stackoverflow.com/questions/3713765/viewing-all-git-diffs-with-vimdiff)
+
+~~~~~
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+~~~~~
+
+Typing `git d` yields the expected behavior, typing `:wq` in vim cycles to the next file in the changeset.
+
+## Comparing Two Files
+[How do I use vim as a diff tool?](https://vi.stackexchange.com/questions/625/how-do-i-use-vim-as-a-diff-tool)
+
+To open two files in Vim using vimdiff:
+
+~~~~~
+# Use -d flag
+$ vim -d <file1> <file2>
+
+# Use vimdiff wrapper app
+$ vimdiff <file1> <file2>
+~~~~~
+
+To run vimdiff within Vim to compare two files in a new tab:
+
+~~~~~
+:tabe file1
+:vert diffsplit file2
+~~~~~
+
+To compare two files in the current tab:
+
+~~~~~
+:e file1
+:vert diffsplit file2
+~~~~~
+
+
 ## Fugitive
 
 [vim-fugitive](https://github.com/tpope/vim-fugitive)
