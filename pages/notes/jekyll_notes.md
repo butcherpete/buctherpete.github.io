@@ -5,7 +5,7 @@ keywords: jekyll, notes
 last_updated: January 30, 2017
 summary: Jekyll is a blog-aware, static site generator in Ruby.
 sidebar: notes_sidebar
-permalink: notes_jekyll.html
+permalink: jekyll_notes.html
 toc: false
 folder: notes 
 ---
