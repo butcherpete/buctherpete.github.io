@@ -28,6 +28,12 @@ folder: notes
 
 * [StaticGen](https://www.staticgen.com/)
 
+## Jekyll Sites
+
+- [eb](https://eduardoboucas.com/)
+- [Including and Managing Images in Jekyll](https://eduardoboucas.com/blog/2014/12/07/including-and-managing-images-in-jekyll.html)
+- [Web Development Notes](http://dev-notes.eu/jekyll/)
+
 ## Jekyll File Structure
 
 This is the default tree structure:

@@ -92,7 +92,7 @@ Command | Affect
 `<Enter>` | Open current file in the window below.
 `p` | Run `git add --patch` for current file.
 `C` | Invoke `:Gcommit`.
-`:Gdiff` | View changes in file.
+`:Gdiff` | View changes in a file.
 
 ### Gdiff
 
@@ -100,6 +100,18 @@ Run `:Gdiff` without any arguments to view a vimdiff of the current working copy
 
 * Left: Index copy
 * Right: Working copy
+
+To view diff between the current file and the index:
+
+~~~~~
+:Gdiff :0
+~~~~~
+
+To view a diff between the current file and some other revision:
+
+~~~~~
+:Gdiff [revision]
+~~~~~
 
 #### Wholesale Recon
 

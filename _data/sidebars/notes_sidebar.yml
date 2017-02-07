@@ -53,11 +53,15 @@ entries:
 
     folderitems:
     - title: Git Resources 
-      url: /get_resources.html
+      url: /git_resources.html
       output: web, pdf
 
     - title: Git Aliases 
       url: /git_alias.html
+      output: web, pdf
+
+    - title: Git Diff 
+      url: /git_diff.html
       output: web, pdf
 
     - title: .gitignore 
