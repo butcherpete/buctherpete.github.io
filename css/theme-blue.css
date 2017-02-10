@@ -23,11 +23,19 @@ h4 {color: black; }
 }
 
 .nav > li.active > a {
-    background-color: #347DBE;
+   /* background-color: #347DBE; */
+      background-color: #f1f1f1;
+  /*  background-color: orange; */
+      font-weight:bold;
+      color:black;
 }
 
 .nav > li > a:hover {
-    background-color: #248ec2;
+   /*  background-color: #248ec2; */
+    /* color: #347DD4; */
+       color: #1caff6
+       background-color: yellow ; 
+     /*background-color: #f1f1f1; */
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
@@ -100,14 +108,15 @@ body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic !im
 
 div.sidebarTitle {
    /* color: #015CAE; */
+    background-color:white;
 }
 
 li.sidebarTitle {
-    margin-top:2.5rem;
+    padding-top:2.5rem;  /* margins changed to paddings %/
     font-weight:normal;
- /*   font-size:130%; 
+ /* font-size:130%; 
     color: #015CAE; */
-    margin-bottom:10px;
-    margin-left: 5px;
-
+    padding-bottom:10px;
+    padding-left: 5px;
+    background-color:white;
 }

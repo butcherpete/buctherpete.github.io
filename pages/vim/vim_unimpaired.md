@@ -3,18 +3,19 @@ title: Vim Unimpaired
 tags: [vim]
 keywords: vim 
 last_updated: January 29, 2017
-summary: "A crib of Vim tips and tricks."
+summary: "This plugin provides several pairs of bracket maps."
 sidebar: notes_sidebar
 permalink: vim_unimpaired.html
 folder: vim 
 ---
 
+[tpope/vim-unimpaired](https://github.com/tpope/vim-unimpaired/tree/master/doc)
+
 ```
 :help unimpaired
 ```
 
-The following maps all correspond to normal mode commands.  If a count is
-given, it becomes an argument to the command.  A mnemonic for the "a" commands is "args" and for the "q" commands is "quickfix".
+The following maps all correspond to Normal mode commands. If a count is given, it becomes an argument to the command.  A mnemonic for the "a" commands is "args" and for the "q" commands is "quickfix".
 
 Key | Action
 --- | ------

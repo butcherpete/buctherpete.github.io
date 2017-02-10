@@ -1,19 +1,13 @@
 ---
-title: Markdown 
-tags: [vim, jekyll]
+title: Kramdown Notes
+tags: [vim, markdown, jekyll]
 keywords: vim, jekyll
 last_updated: February 1, 2017
-summary: "A crib of Vim tips and tricks."
+summary: The kramdown syntax is based on the Markdown syntax and has been enhanced with features that are found in other Markdown implementations like Maruku, PHP Markdown Extra and Pandoc. 
 sidebar: notes_sidebar
-permalink: notes_markdown.html
+permalink: kramdown_notes.html
 folder: vim 
 ---
-## Resources
-
-[Why You Shouldn’t Use “Markdown” for Documentation](http://ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/)
-
-[List of Markdown Flavors](https://github.com/jgm/CommonMark/wiki/Markdown-Flavors)
-
 
 ## Kramdown
 [kramdown Syntax](https://kramdown.gettalong.org/syntax.html)
@@ -69,11 +63,4 @@ kramdown:
 
 [Kramdown Markdown Options (Defaults?) for Github Flavored Markdown (GFM) - Backticks](https://github.com/jekyll/jekyll/issues/4202)
 
-## Markdown Preview
-
-I installed grip using homebrew. Grip provides the Github flavored markdown formatting.
-
-~~~
-$ grip filename.md
-~~~
 

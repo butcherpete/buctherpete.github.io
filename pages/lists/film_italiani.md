@@ -24,7 +24,7 @@ Ecco i cento film italiani da salvare. Le pellicole che hanno cambiato la memori
 * _La città dolente_, regia di Mario Bonnard (1949) YouTube
 * _Cielo sulla palude_, regia di Augusto Genina (1949)
 * _Stromboli, terra di Dio_, regia di Roberto Rossellini (1949) &#9733;&#9733;&#9733;&#9733;
-* _Catene_, regia di Raffaello Matarazzo (1949) FilmStruck
+* _Catene_, regia di Raffaello Matarazzo (1949) &#9733;&#9733;&#9733;
 * _Il cammino della speranza_, regia di Pietro Germi (1950)
 * _Domenica d'agosto_, regia di Luciano Emmer (1950)
 * _Cronaca di un amore_, regia di Michelangelo Antonioni (1950) &#9733;&#9733;&#9733;

@@ -51,6 +51,7 @@ You can resize windows by clicking on the boundary between windows, and dragging
 
 Command  | Action
 ----     |  ------
+`ctrl-w =` |  Makes the windows equal widths.
 `ctrl-w +` |  Increase height of current window by 1 line.
 `ctrl-w -` |  Decrease height of current window by 1 line.
 `ctrl-w _` |   Maximise height of current window.

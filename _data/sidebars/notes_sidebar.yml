@@ -88,28 +88,57 @@ entries:
       url: /notes_markdown.html
       output: web, pdf
 
-  - title: NodeJS 
+  - title: Front-End Tooling 
     output: web, pdf
 
     folderitems:
-    - title: NodeJS Resources 
-      url: /node_resources.html
+    - title: Bower Notes 
+      url: /bower_notes.html
       output: web, pdf
 
-    - title: NodeJS Notes 
+    - title: Gulp Notes 
+      url: /gulp_notes.html
+      output: web, pdf
+
+    - title: Node.js Notes
       url: /node_notes.html
       output: web, pdf
 
-  - title: SASS 
-    output: web, pdf
-
-    folderitems:
-    - title: Sass Resources 
-      url: /sass_resources.html
+    - title: NPM Notes 
+      url: /npm_notes.html
       output: web, pdf
 
     - title: Sass Notes 
       url: /sass_notes.html
+      output: web, pdf
+ 
+    - title: Yeoman Notes 
+      url: /yeoman_notes.html
+      output: web, pdf
+
+
+  - title: Markup 
+    output: web, pdf
+
+    folderitems:
+    - title: HTML5 Notes 
+      url: /html_notes.html
+      output: web, pdf
+
+    - title: Asciidoc Notes 
+      url: /asciidoc_notes.html
+      output: web, pdf
+
+    - title: Markdown Notes 
+      url: /markdown_notes.html
+      output: web, pdf
+
+    - title: Kramdown Notes 
+      url: /kramdown_notes.html
+      output: web, pdf
+
+    - title: Rest Notes 
+      url: /rest_notes.html
       output: web, pdf
 
     - title: Px to Rem Conversion 
@@ -190,6 +219,10 @@ entries:
 
     - title: Surround 
       url: /vim_surround.html
+      output: web, pdf
+
+    - title: Syntastic 
+      url: /vim_syntastic.html
       output: web, pdf
 
     - title: Text Objects 

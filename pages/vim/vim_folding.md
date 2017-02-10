@@ -14,7 +14,7 @@ folder: vim
 <https://github.com/nelstrom/vim-markdown-folding>
 
 
-### Essentials
+## Essentials
 
 Command  |  Action
 ---     |  ------
@@ -26,7 +26,7 @@ Command  |  Action
 `zv`  | Expand folds to reveal cursor
 `:FoldToggle` | Toggles between flat and nested folding in vim-markdown-folding.
 
-### Navigation 
+## Navigation 
 
 To navigate an unfolded document:
 
@@ -35,7 +35,7 @@ Command  |  Action
 `zj`  | Move down to toop of the next fold.
 `zk`  | Move up the bottom of the previous fold.
  
-### More Commands 
+## More Commands 
 
 Command  |  Action
 ---     |  ------
@@ -49,4 +49,3 @@ Command  |  Action
 `zM`  | Close all folds.
 `zr`  | Increase the fold-level by one.
 `zR`  | Open all folds.
-

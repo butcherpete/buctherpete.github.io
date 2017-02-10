@@ -333,7 +333,8 @@ li.dropdownActive a {
 
 footer {
     font-size: smaller;
-    background-color:aqua;
+    background-color:#1caff6;
+    color: white;
 }
 
 /* FAQ page */
@@ -355,6 +356,7 @@ a.accordion-toggle, a.accordion-collapsed {
     padding: 0;
     /*margin: 0 0 0 18px;*/
     margin:0px;
+    background-color:#FAFAFA;
 }
 
 .nav {
@@ -389,15 +391,15 @@ a.accordion-toggle, a.accordion-collapsed {
 
 
 .nav li > a > span:after {
-    content: '\25be';
+  /*  content: '\25be'; */
 }
 .nav li.open > a > span:after {
-    content: '\25b4';
+  /*  content: '\25b4'; */
 }
 
 .nav a:hover, .nav li.active > a {
-    background-color: #8D8D8D;
-    color: #f5f5f5;
+    background-color: #FAFAFA;
+    color: #1caff6;
 }
 
 .nav > li.active > a  {
@@ -442,11 +444,11 @@ ul#mysidebar {
 }
 
 .nav li a:hover {
-    background-color: #8D8D8D;
+    background-color: #FAFAFA; 
 }
 
 .nav ul li a {
-    border-top:1px solid whitesmoke;
+    border-top:1px solid #FAFAFA;
     padding-left:10px;
 }
 /* end sidebar */
@@ -756,7 +758,7 @@ ol.series li {
 }
 
 #mysidebar .nav ul {
-    background-color: #FAFAFA;
+    background-color: #f1f1f1;
 }
 .nav ul.series li {
     list-style: decimal;
@@ -903,7 +905,8 @@ span.soft {
 @media (min-width: 1000px) {
 
     ul#mysidebar {
-        width: 225px;
+        width: 80%;
+        background-color: #f1f1f1;
     }
 }
 
