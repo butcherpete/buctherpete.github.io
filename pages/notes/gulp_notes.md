@@ -73,6 +73,39 @@ gulp.task('<name>', function() { ... });
 
 ## Recipes
 
+Watch processes
+
+
+### Chaining Tasks
+
+> Gulp4 is required for chaining tasks.
+
+The `gulp.series` "function call allows you to run a sequential order of Gulp tasks. It takes an infinite amount of parameters of either string (pointing to a defined Gulp task) or functions."
+
+```
+gulp.task('scripts', 
+  gulp.series('tests', function() {
+    return gulp.src(['app/scripts/vendor/**/*.js', 'app/scripts/**/*.js'])
+      .pipe(concat('main.min.js'))
+      .pipe(gulp.dest('dist'));
+    })
+);
+```
+
+### Parallel Tasks
+
+> Gulp4 is required for parallel tasks.
+
+The `gulp.parallel` function "takes the same parameters as gulp.series but executes those tasks in parallel. To do so, it spawns a series of processes that are executed at the same time."
+
+```
+gulp.task('default',
+  gulp.series('clean',
+    gulp.parallel('styles', 'scripts')
+  )
+);
+```
+
 ### Single Destination & Watch
 
 [osscafe/gulp-cheatsheet](https://github.com/osscafe/gulp-cheatsheet/blob/master/README.md)
@@ -304,24 +337,29 @@ gulp.task('useref', function(){
 
 ### Clean Task
 
-`````
+The `del` package is a Node.js module that enables you to remove the products (files and folders) of a previous build. The module supports multiple files and globbing.
+
+```
 var del = require('del');
 
 gulp.task('clean', function() {
   return del(['dist']);
 });
+```
+The glob pattern ** matches all children *and the parent*.
+
+### Reporting Task
+
+Gulp tasks do not need to return streams. If you are using Node packages (such as `del`) instead of Gulp streams, you can close tasks  by passing a `done` callback back to the function.
+
 `````
-
-### Hello World Task
-
-`````
-var gulp = require('gulp'); 
-
-gulp.task('test', gulp.series(function (done) {
-  console.log('Hello World!');
+gulp.task('report', gulp.series(function (done) {
+  console.log('We are done');
   done();
 }));
 `````
+
+The `done` callback function notifies Gulp when the report task has finished. instead of returning streams, and everything inside your task relies purely on other Node functionality."
 
 ## Plugins
 
@@ -334,7 +372,7 @@ Plugin       | Description
 [sprity](https://www.npmjs.com/package/sprity)      |  Create sprites.
 [gulp-changed](https://www.npmjs.com/package/gulp-changed)|   Compiling changes files only.
 [require-directory](https://www.npmjs.com/package/require-directory)  |  Recursively iterates over specified directory, `require()`ing each file, and returning a nested hash structure containing those modules.
-
+[del](https://www.npmjs.com/package/del) | Delete files and folders.
 
 ### JavaScript 
 
@@ -383,10 +421,10 @@ Fix for jshint dependency problem: `npm install --save-dev jshint@2.8.0`
 - Browsersync
 - build tool
 - `del` Node.js package
-- dependency chain
+- dependency chain. A dependency is a relationship between two tasks that specifies their order. "Dependencies can also have other dependencies. The path from the outmost dependency to the very root task is called a dependency chain."
 - dependency manager
 - destinations (outbound streams)
-- execution chain
+- execution chain. An execution chain specifies a set of loosely-coupled tasks that are called in order, either sequentially or in parallel.
 - generator
 - globstar
 - input streams (readable streams)

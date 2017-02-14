@@ -32,6 +32,8 @@ $ cd <directory for your Xcode project>  
 $ jazzy -o com.intel.wearable.core.CoreIQ.docs -m CoreIQ
 ~~~~
 
+> Do not include `-m` flag if no module is specified in the Xcode project. An error is thrown otherwise. 
+
 ## Packaging Jazzy Docs for Distribution
 
 To package Jazzy docs, run the commands:
