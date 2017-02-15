@@ -1,5 +1,5 @@
 body {
-    font-size:1rem;
+  /*  font-size:1rem; */
 }
 
 .bs-callout {
@@ -419,7 +419,7 @@ background-color: #347DBE;
 }
 
 .nav > li > a {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     padding: 4px 10px;
 }
@@ -636,7 +636,10 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-h3 {font-weight:normal; font-size:130%;}
+h3 {font-weight:500; 
+    font-size:1rem;
+}
+
 h4 {color: #808080; font-weight:normal; font-size:120%; }
 
 .alert, .callout {
@@ -708,18 +711,18 @@ button.cursorNorm {
 }
 
 h2  {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #333;
     line-height: 2rem;
     margin:0;
-    padding: 3rem 0 1rem;
+    padding: 2rem 0 1rem;
 }
 
 h2:after {
   content:" ";
   display:block;
-  margin: .75rem 0 .75rem;
+  margin: .25rem 0 .75rem;
   border: .5px solid whitesmoke;
   background: rgba(0, 0, 0, 0.1);
 }

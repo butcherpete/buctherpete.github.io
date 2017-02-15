@@ -15,7 +15,7 @@ folder: notes
 To serve pages locally:
 
 ```
-$ jekyll serve
+$ bundle exec jekyll serve
 ```
 A development server runs at <http://localhost:4000/>
 

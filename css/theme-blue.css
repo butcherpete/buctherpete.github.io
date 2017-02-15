@@ -1,7 +1,7 @@
 .summary {
     color: #808080;
  /*   border-left: 2px solid #015CAE; */
-    font-size:1rem;
+    font-size:0.875rem;
 }
 
 html {
@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   line-height:1.5; }
 
 
