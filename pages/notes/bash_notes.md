@@ -9,4 +9,13 @@ permalink: bash_notes.html
 folder: notes 
 ---
 
-## Placeholder
+## Tools to Research
+
+[MacBook — My command-line utilities](https://hackernoon.com/macbook-my-command-line-utilities-f8a121c3b019#.wym2etm8z)
+
+## PATH
+
+~~~
+$ echo $PATH
+ /usr/local/var/rebenv/shims:/Users/toddeugX/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+~~~

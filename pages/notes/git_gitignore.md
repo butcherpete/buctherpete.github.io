@@ -1,9 +1,9 @@
 ---
-title: gitignore 
+title: gitignore & gitattributes
 tags: [git]
 keywords: git, customization 
-last_updated: February 1, 2017
-summary: A few notes about gitignore 
+last_updated: February 19, 2017
+summary: A few notes about the .gitignore and .gitattributes files.
 sidebar: notes_sidebar
 permalink: git_gitignore.html
 folder: notes 
@@ -110,3 +110,48 @@ $ git config --global core.excludesfile ~/.gitignore_global
 ehthumbs.db
 Thumbs.db
 ```
+
+## .gitattribute Files
+
+### Identifying Binary Files
+
+### Diffing Word (.docx) Files
+
+A way of tracking between Word files in Git using `docx2txt` command line utility, `.gitattributes` file, and Git configurations.
+
+Once enabled, Git processes diffs of files ending in `.docx`using the user-defined "word" filter (the docx2txt program). The docx2txt program generates text files from Word docs whenever Git performs a diff on those files. 
+
+Changes in formatting are not identified, but you can track changes to the text.  
+
+1. Add to .gitattributes file:
+
+   ```
+   *.docx diff=word
+   ```
+
+2. Install docx2txt.
+
+   ```
+   $ brew install docx2txt
+   ```
+
+3. Create a Bash script called docx2txt that converts Word documents into a format that Git can read.
+
+   ```
+   #!/bin/bash
+   docx2txt.pl $1 -
+   ```
+
+4. Make the script executable and place it in your PATH
+
+   ```
+   $ chmod a+x
+   ```
+
+5. Configure Git to use the script.
+
+   ```
+   $ git config diff.word.textconv docx2txt
+   ```
+
+

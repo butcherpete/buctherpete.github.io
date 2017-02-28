@@ -15,25 +15,75 @@ folder: notes
 
 "Yeoman creates the necessary folders, copies initial files (like build scripts), applies boilerplate code, and triggers the installation of dependencies."
 
+## Installation
+
+To install the `yo` command-line tool:
+
+~~~~
+$ npm install -g yo
+~~~~
+
+
+To install both Yeoman and the generator plugin:
+
+~~~~
+npm install -g yo generator-generator
+~~~~
+
 ## Generators
 
-The generator-generator enables you to create your own generator. 
+By convention, the name of the generator always begins with the _generator-_ prefix.
+
+A generator consists of two parts:
+
+- Assembly instructions file
+- Project template
+
+The project template consists of fixed, flexible, optional, and restorable parts.
+
+The `generator-generator` is a predefined Yeoman generator that facilitates the creation of new generators. 
 
 ### Creating Local Generators
 
+~~~
+$ yo doctor
+~~~
+
 ## Tutorial Procedure
 
-1. Create a folder to contain sample-project files.
-2. Copy files from the original project.
-   * main.js
-   * package.json
-   * gulpfile.js
-   * main.less
-   * bower.json
-   * index.html
+1. Create a folder named `generator-<project name>` to contain the project templates. The folder must include the name of your generator. Yeoman relies on the file system to find generators.
+2. Add six template files to the project folder. You do not need subfolders.
+   * `main.js` (empty)
+   * `package.json`
+   * `gulpfile.js`
+   * `main.less` (empty)
+   * `bower.json`
+   * `index.html`
 
-3. Copy files to the folder. 
-4. Edit the bower.json file.
+3. Create a [package.json](https://docs.npmjs.com/files/package.json#files), a Node.js module manifest. The name property must be prefixed by "generator-" and the repo must have a description in order to be indexed by Yeoman.
+
+   ```json
+   {
+     "name": "generator-name",
+     "version": "0.1.0",
+     "description": "",
+     "files": [
+       "generators",
+      ],
+     "keywords": ["yeoman-generator"],
+     "dependencies": {
+       "yeoman-generator": "^1.0.0"
+     }
+   }
+   ```
+
+4. Make sure that the latest version of yeoman-generator is a dependency.
+
+   ```
+   $ npm install --save yeoman-generator
+   ```
+
+5. Create a [bower.json](https://github.com/bower/spec/blob/master/json.md), a file that configures packages can be used as a dependency of another package.
 
    ```json
    {
@@ -54,7 +104,7 @@ The generator-generator enables you to create your own generator.
    }
    ```
 
-5. Edit the main.less file.
+6. Edit the main.less file.
 
    ~~~ javascript
    <% if (includeNormalize) { %>
@@ -63,7 +113,7 @@ The generator-generator enables you to create your own generator.
    <% } %>
    ~~~
 
-6. Edit the index.html file.
+7. Edit the index.html file.
 
    ~~~ html 
    <!DOCTYPE html>
@@ -81,18 +131,19 @@ The generator-generator enables you to create your own generator.
    </html>
    ~~~
 
-7. Install the generator and call it.
+8. Install the generator and call it.
 
    ~~~
    $ npm install -g generator-generator
    $ yo generator
    ~~~
 
-8. Answer the questionnaire.
-9. Copy templates into the generators/app/templates folder.
-10. Edit the index.js file.
+9. Answer the questionnaire.
+10. Copy templates into the generators/app/templates folder.
+11. Edit the index.js file.
 
 ## Glossary
 
 * generator. A generator is essentially a Node.js module. "A Yeoman generator is a tool that sets up new projects and provides the necessary files."
 * scaffolding.
+- yo. A command-line tool that is the "executor of generators".
