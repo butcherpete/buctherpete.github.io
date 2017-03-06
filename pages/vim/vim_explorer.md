@@ -14,6 +14,7 @@ folder: vim
 Lazy  | Command  |  Open File Explorer
 ---     | ---     |  ------
 `:e.` | `:edit .` | At current working directory.
+ | `:cd` | Change the working directory.
 `:sp.` | `:split .` | In split at current working directory.
 `:vs.` | `:vsplit .` | In vertical split at current working directory.
 `:E` | `:Explore` | At directory of current line.

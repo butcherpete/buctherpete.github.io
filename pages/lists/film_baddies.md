@@ -7,6 +7,7 @@ sidebar: lists_sidebar
 permalink: film_baddies.html
 folder: lists 
 ---
+
 A list of some of my favorite film noir performances listed by archetype.
 
 ## Angels

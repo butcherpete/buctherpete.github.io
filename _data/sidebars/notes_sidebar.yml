@@ -20,31 +20,51 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: ACK 
-    output: web, pdf
-    folderitems:
-
-    - title: ACK Resources 
-      url: /ack_resources.html
-      output: web
-
-    - title: ACK Notes 
-      url: /ack_notes.html
-      output: web, pdf
-
   - title: Bash 
     output: web, pdf
 
     folderitems:
-    - title: Bash Resources 
-      url: /bash_resources.html
+    - title: ack 
+      url: /ack_notes.html
       output: web, pdf
 
-    - title: Animated Gifs 
-      url: /notes_gifs.html
+    - title: Data 
+      url: /bash_data.html
       output: web, pdf
 
-    - title: Essential Command Line 
+    - title: Environmental Variables 
+      url: /bash_envs.html
+      output: web, pdf
+
+    - title: fasd 
+      url: /bash_fasd.html
+      output: web
+      
+    - title: File System 
+      url: /bash_files.html
+      output: web, pdf
+      
+    - title: ImageMagick 
+      url: /bash_imagemagick.html
+      output: web
+      
+    - title: Notes 
+      url: /bash_notes.html
+      output: web, pdf
+
+    - title: Processes 
+      url: /bash_processes.html
+      output: web, pdf
+
+    - title: Security 
+      url: /bash_security.html
+      output: web, pdf
+
+    - title: Servers 
+      url: /bash_servers.html
+      output: web, pdf
+
+    - title: Skills 
       url: /bash_skills.html
       output: web, pdf
 
@@ -72,87 +92,130 @@ entries:
       url: /git_merge.html
       output: web, pdf
 
+  - title: JavaScript 
+    output: web, pdf
+
+    folderitems:
+    - title: Bower 
+      url: /bower_notes.html
+      output: web
+
+    - title: Browserify 
+      url: /browserify_notes.html
+      output: web
+
+    - title: Browsersync 
+      url: /gulp_browsersync.html
+      output: web
+
+    - title: Gulp 
+      url: /gulp_notes.html
+      output: web, pdf
+
+    - title: JSHint 
+      url: /jshint_notes.html
+      output: web
+
+    - title: Node
+      url: /node_notes.html
+      output: web, pdf
+
+    - title: NPM 
+      url: /npm_notes.html
+      output: web, pdf
+
+    - title: Yeoman 
+      url: /yeoman_notes.html
+      output: web, pdf
+
   - title: Jekyll 
     output: web, pdf
 
     folderitems:
-    - title: Jekyll Resources 
-      url: /jekyll_resources.html
-      output: web, pdf
+    - title: generator-jekyllized 
+      url: /jekyll_generator.html
+      output: web
 
-    - title: Jekyll Notes 
+    - title: Jekyll Commands
       url: /jekyll_notes.html
       output: web, pdf
 
-    - title: Markdown 
-      url: /notes_markdown.html
-      output: web, pdf
+    - title: Jekyll Resources 
+      url: /jekyll_resources.html
+      output: web
 
-  - title: Front-End Tooling 
-    output: web, pdf
-
-    folderitems:
-    - title: Bower Notes 
-      url: /bower_notes.html
-      output: web, pdf
-
-    - title: Gulp Notes 
-      url: /gulp_notes.html
-      output: web, pdf
-
-    - title: Node.js Notes
-      url: /node_notes.html
-      output: web, pdf
-
-    - title: NPM Notes 
-      url: /npm_notes.html
-      output: web, pdf
-
-    - title: Sass Notes 
-      url: /sass_notes.html
-      output: web, pdf
- 
-    - title: Yeoman Notes 
-      url: /yeoman_notes.html
-      output: web, pdf
-
+    - title: Jekyll Doc Theme 
+      url: /jekyll_doc-theme.html
+      output: web
 
   - title: Markup 
     output: web, pdf
 
     folderitems:
-    - title: HTML5 Notes 
-      url: /html_notes.html
-      output: web, pdf
-
-    - title: Asciidoc Notes 
+    - title: Asciidoc 
       url: /asciidoc_notes.html
       output: web, pdf
 
-    - title: Markdown Notes 
-      url: /markdown_notes.html
+    - title: HTML5 
+      url: /html_notes.html
       output: web, pdf
 
-    - title: Kramdown Notes 
+    - title: Kramdown 
       url: /kramdown_notes.html
       output: web, pdf
 
-    - title: Rest Notes 
-      url: /rest_notes.html
+    - title: Markdown 
+      url: /markdown_notes.html
       output: web, pdf
 
     - title: Px to Rem Conversion 
       url: /notes_rem.html
       output: web, pdf
 
+    - title: reStructuredText  
+      url: /rest_notes.html
+      output: web, pdf
+
+    - title: Sass 
+      url: /sass_notes.html
+      output: web, pdf
+ 
+  - title: Miscellaneous 
+    output: web, pdf
+    folderitems:
+
+    - title: Animated Gifs 
+      url: /notes_gifs.html
+      output: web
+
+    - title: Homebrew 
+      url: /brew_notes.html
+      output: web
+
+  - title: Ruby 
+    output: web, pdf
+
+    folderitems:
+    - title: Bundler 
+      url: /ruby_bundler.html
+      output: web, pdf
+
+    - title: Gems 
+      url: /ruby_gems.html
+      output: web, pdf
+
+    - title: Rbenv 
+      url: /ruby.html
+      output: web, pdf
+
+    - title: RVM 
+      url: /ruby_rvm.html
+      output: web, pdf
+
   - title: Vim 
     output: web, pdf
 
     folderitems:
-    - title: Vim Notes Omnibus 
-      url: /mydoc_vim_notes.html
-      output: web, pdf
-
     - title: Airline 
       url: /vim_airline.html
       output: web, pdf
@@ -251,6 +314,10 @@ entries:
     folderitems:
     - title: Jazzy 
       url: /jazzy_notes.html
+      output: web, pdf
+
+    - title: Swift3 
+      url: /ios_swift3.html
       output: web, pdf
 
     - title: Xcode 

@@ -21,15 +21,22 @@ entries:
 
   - title: Film 
     output: web, pdf
-
     folderitems:
     - title: Film italiani 
       url: /film_italiani.html
       output: web, pdf
 
+    - title: Film Gris 
+      url: /film_gris.html
+      output: web, pdf
+
     - title: Film Noir 
       url: /film_noir.html
       output: web, pdf
+
+    - title: Film Noir Archtypes
+      url: /film_baddies.html
+      output: web
 
     - title: Jidaigeki Films 
       url: /film_jidaigeki.html

@@ -32,6 +32,19 @@ For example `5i~Esc`.
 Code Sample
 ~~~~~
 
+## Reading Microsoft Word Files
+
+To view the content of `.docx` in Vim by adding the following to your `.vimrc`.
+
+~~~
+"use docx2txt.pl to allow VIm to view the text content of a .docx file directly.
+
+autocmd BufReadPre *.docx set ro
+autocmd BufReadPost *.docx %!docx2txt.pl 
+~~~
+
+The settings enables you to view `.docx` text specified as command-line argument to vim, but not of those read using `:r file.docx`.
+
 ## Pandoc
 
 [Vimcast 64:Using external filter commands to reformat HTML](http://vimcasts.org/episodes/using-external-filter-commands-to-reformat-html/)
