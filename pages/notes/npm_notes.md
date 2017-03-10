@@ -1,5 +1,5 @@
 ---
-title: NPM Notes 
+title: NPM 
 tags: [tooling, npm]
 keywords: npm 
 last_updated: February 9, 2017

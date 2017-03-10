@@ -1,24 +1,26 @@
 ---
-title: Browserify
+title: Bundling 
 tags: [gulp, tooling, npm, javascript, sass]
 keywords: gulp, tooling, npm, javascript, sass 
-last_updated: March 5, 2017
-summary: browserify is a tool for compiling node-flavored commonjs modules for the browser. You can use browserify to organize your code and use third-party libraries even if you don't use node itself in any other capacity except for bundling and installing packages with npm. The module system that browserify uses is the same as node, so packages published to npm that were originally intended for use in node but not browsers will work just fine in the browser too. 
+last_updated: March 9, 2017
+summary: 
 sidebar: notes_sidebar
-permalink: browserify_notes.html
+permalink: js_bundling.html
 folder: notes 
 ---
 
-## References
+## Browserify 
+
+browserify is a tool for compiling node-flavored commonjs modules for the browser. You can use browserify to organize your code and use third-party libraries even if you don't use node itself in any other capacity except for bundling and installing packages with npm. The module system that browserify uses is the same as node, so packages published to npm that were originally intended for use in node but not browsers will work just fine in the browser too. 
 
 - [substack/browserify-handbook](https://github.com/substack/browserify-handbook)
 - [substack/node-browserify](https://github.com/substack/node-browserify) 
 - [Using Browserify](https://gulp.readme.io/docs/browserify-uglify2-with-sourcemaps)
 
 
-## Installing Browserify
+### Installing Browserify
 
-## Integrating Browserify with Gulp
+### Integrating Browserify with Gulp
 
 [Gulp + Browserify: The Everything Post](https://www.viget.com/articles/gulp-browserify-starter-faq)
 
@@ -98,12 +100,14 @@ gulp.task('javascript', function () {
 });
 ~~~
 
-## Debowerify & Deamdify
+### Debowerify & Deamdify
 
 Debowerify enables you to use Browserify to load `bower` dependencies directly into your bundles. 
 
 - [eugeneware/debowerify](https://github.com/eugeneware/debowerify) A browserify transform to enable the easy use of bower components in browserify client javascript projects. This can be used in conjunction with deamdify to require AMD components from bower as well.
 - [jaredhanson/deamdify](https://github.com/jaredhanson/deamdify) This module is a browserify plugin that will transform AMD modules into Node.js-style modules so that they can be included in browser-ified bundles. With this transform in place, Node and AMD modules can be freely intermixed, and the resulting bundle can be used without the need for a separate loader such as RequireJS.
+
+## Webpack
 
 ## Glossary
 

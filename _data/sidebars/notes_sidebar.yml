@@ -97,35 +97,43 @@ entries:
 
     folderitems:
     - title: Bower 
-      url: /bower_notes.html
+      url: /js_bower.html
       output: web
 
-    - title: Browserify 
-      url: /browserify_notes.html
+    - title: Bundling 
+      url: /js_bundling.html
       output: web
 
     - title: Browsersync 
-      url: /gulp_browsersync.html
+      url: /js_browsersync.html
       output: web
 
     - title: Gulp 
       url: /gulp_notes.html
       output: web, pdf
 
-    - title: JSHint 
-      url: /jshint_notes.html
+    - title: Linting 
+      url: /js_linting.html
       output: web
 
     - title: Node
       url: /node_notes.html
       output: web, pdf
 
-    - title: NPM 
+    - title: npm 
       url: /npm_notes.html
-      output: web, pdf
+      output: web
+
+    - title: Testing 
+      url: /js_testing.html
+      output: web
+
+    - title: Transpiling 
+      url: /js_babel.html
+      output: web
 
     - title: Yeoman 
-      url: /yeoman_notes.html
+      url: /js_yeoman.html
       output: web, pdf
 
   - title: Jekyll 
@@ -188,8 +196,28 @@ entries:
       url: /notes_gifs.html
       output: web
 
+    - title: Evernote 
+      url: /evernote_notes.html
+      output: web
+
     - title: Homebrew 
       url: /brew_notes.html
+      output: web
+
+  - title: Python 
+    output: web
+
+    folderitems:
+    - title: Conda 
+      url: /python_conda.html
+      output: web
+
+    - title: jupyter 
+      url: /python_jupyter.html
+      output: web
+
+    - title: pip 
+      url: /python_pip.html
       output: web
 
   - title: Ruby 

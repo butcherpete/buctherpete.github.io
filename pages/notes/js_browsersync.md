@@ -5,7 +5,7 @@ keywords: gulp, tooling, npm, javascript, sass
 last_updated: February 18, 2017
 summary: BrowserSync makes your tweaking and testing faster by synchronising file changes and interactions across multiple devices.
 sidebar: notes_sidebar
-permalink: gulp_browsersync.html
+permalink: js_browsersync.html
 folder: notes 
 ---
 

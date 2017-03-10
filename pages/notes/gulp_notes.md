@@ -1,5 +1,5 @@
 ---
-title: Gulp Notes 
+title: Gulp 
 tags: [gulp, tooling, npm, javascript, sass]
 keywords: gulp, tooling, npm, javascript, sass 
 last_updated: February 6, 2017

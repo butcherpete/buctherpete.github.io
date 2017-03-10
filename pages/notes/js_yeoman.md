@@ -1,11 +1,11 @@
 ---
-title: Yeoman Notes 
+title: Yeoman 
 tags: [yeoman, tooling]
 keywords: yeoman, tooling 
 last_updated: February 6, 2017
 summary: Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive. To do so, we provide a generator ecosystem. A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts. 
 sidebar: notes_sidebar
-permalink: yeoman_notes.html
+permalink: js_yeoman.html
 folder: notes 
 ---
 
