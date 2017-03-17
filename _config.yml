@@ -93,9 +93,10 @@ sidebars:
 - mydoc_sidebar
 - product1_sidebar
 - product2_sidebar
-- other
 - notes_sidebar
 - lists_sidebar
+- design_sidebar
+- other
 
 description: "Adapted from Tom Johnson's Jekyll theme for documentation."
 # the description is used in the feed.xml file

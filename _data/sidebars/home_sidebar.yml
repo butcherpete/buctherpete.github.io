@@ -3,16 +3,45 @@
 entries:
 - title: Sidebar
   levels: one
+- title: News 
+  output: web
+  url: /news.html
   folders:
 
-  - title: Lists 
+  - title: Design 
+    output: web
+    url: /news.html
+    folderitems:
+    - title: Notes 
+      url: /notes_landing_page.html
+      output: web
+  - title: Blog 
     output: web
     folderitems:
     - title: News
       url: /news.html
       output: web
-    - title: Theme instructions
+    - title: Book Log 
+      url: /news.html
+      output: web
+    - title: Film Log 
+      url: /news.html
+      output: web
+  - title: Jekyll Theme 
+    output: web
+    folderitems:
+    - title: Theme Instructions 
       url: /mydoc_introduction.html
+      output: web
+    - title: Enhancements 
+      url: /mydoc_introduction.html
+      output: web
+  - title: Lists 
+    output: web
+    url: /news.html
+    folderitems:
+    - title: Book Log 
+      url: /book_log.html
       output: web
     - title: Film italiani 
       url: /film_italiani.html
@@ -22,4 +51,10 @@ entries:
       output: web
     - title: Jidaigeki 
       url: /film_jidaigeki.html
+      output: web
+  - title: Technologies
+    output: web
+    folderitems:
+    - title: Notes 
+      url: /notes_landing_page.html
       output: web
