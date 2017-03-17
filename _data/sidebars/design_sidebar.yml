@@ -1,0 +1,62 @@
+
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Design 
+  version: 
+  folders:
+
+  - title: Accessibility 
+    output: web
+
+    folderitems:
+    - title: Accessibility Resources 
+      url: /ux_notes.html
+      output: web
+
+  - title: ImageMagick 
+    output: web
+
+    folderitems:
+    - title: ImageMagick 
+      url: /imagemagick_notes.html
+      output: web
+
+    - title: CSS3 
+      url: /css3_notes.html
+      output: web
+
+  - title: Material Design 
+    output: web
+
+    folderitems:
+    - title: Sketch Resources 
+      url: /git_notes.html
+      output: web
+
+  - title: Sketch 
+    output: web
+
+    folderitems:
+    - title: Sketch Resources 
+      url: /git_notes.html
+      output: web
+
+  - title: SASS 
+    output: web
+
+    folderitems:
+    - title: SASS Resources 
+      url: /sass_notes.html
+      output: web
+
+  - title: UX 
+    output: web
+
+    folderitems:
+    - title: Usability Resources 
+      url: /ux_notes.html
+      output: web
+
